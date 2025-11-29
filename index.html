@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>عکسخوان پرو | تبدیل تصویر به متن فارسی با هوش مصنوعی</title>
+    <meta name="title" content="عکسخوان پرو | تبدیل تصویر به متن فارسی با هوش مصنوعی" />
+    <meta name="description" content="تبدیل آنلاین عکس به متن (OCR) با هوش مصنوعی و دقت بالا. پشتیبانی کامل از زبان فارسی، انگلیسی و عربی. خروجی ورد (Word) قابل ویرایش بدون بهم‌ریختگی. رایگان و سریع با استفاده از Gemini AI." />
+    <meta name="keywords" content="عکسخوان پرو, تبدیل تصویر به متن, OCR فارسی, هوش مصنوعی جمینای, اسکنر متن, تبدیل عکس به ورد, استخراج متن از عکس, تایپ خودکار, AxKhan Pro, Persian OCR, Image to Text AI, Gemini OCR" />
+    <meta name="author" content="Seyed Mohammad Hossein Toliyat | Dicode" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="language" content="Persian" />
+    <meta name="generator" content="AxKhan Pro V2" />
+
+    <!-- Open Graph / Facebook / Telegram -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dicode.ir/" />
+    <meta property="og:title" content="عکسخوان پرو | تبدیل تصویر به متن با هوش مصنوعی" />
+    <meta property="og:description" content="ابزار حرفه‌ای و رایگان استخراج متن از تصاویر با پشتیبانی از زبان فارسی و خروجی Word. قدرت گرفته از Google Gemini AI." />
+    <meta property="og:site_name" content="AxKhan Pro" />
+    <meta property="og:locale" content="fa_IR" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://dicode.ir/" />
+    <meta property="twitter:title" content="عکسخوان پرو | OCR فارسی هوشمند" />
+    <meta property="twitter:description" content="تبدیل عکس به متن با دقت فوق‌العاده با استفاده از هوش مصنوعی. همین حالا رایگان تست کنید!" />
+    <meta property="twitter:creator" content="@mcoderss" />
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='0' y='0' width='32' height='32' rx='8' fill='%233b82f6'/%3E%3Cpath d='M9 8h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2zm2 5v2h10v-2H11zm0 5v2h7v-2H11z' fill='white'/%3E%3C/svg%3E" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+      /* Custom Scrollbar Styling */
+      ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #cbd5e1; /* slate-300 */
+        border-radius: 20px;
+        border: 3px solid transparent;
+        background-clip: content-box;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #94a3b8; /* slate-400 */
+      }
+
+      /* Dark mode scrollbar */
+      .dark ::-webkit-scrollbar-thumb {
+        background-color: #334155; /* slate-700 */
+      }
+      
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background-color: #475569; /* slate-600 */
+      }
+
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+
+      /* For Firefox */
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Vazirmatn', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                50: '#eff6ff',
+                100: '#dbeafe',
+                500: '#3b82f6',
+                600: '#2563eb',
+                700: '#1d4ed8',
+              },
+              slate: {
+                850: '#151f32', // Custom dark shade
+                900: '#0f172a',
+                950: '#020617',
+              }
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.5s ease-out',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "docx": "https://aistudiocdn.com/docx@^9.5.1",
+    "file-saver": "https://aistudiocdn.com/file-saver@^2.0.5"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-primary-500 selection:text-white dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
