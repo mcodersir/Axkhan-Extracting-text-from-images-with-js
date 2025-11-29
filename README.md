@@ -1,4 +1,5 @@
-<img width="2888" height="1150" alt="image" src="https://github.com/user-attachments/assets/47c1329e-ee48-45d7-b35f-c311d743e87a" />
+<img width="1709" height="1149" alt="image" src="https://github.com/user-attachments/assets/604e85a2-98a7-4ef6-8803-7c29b4ea15a5" />
+#Axkhan Pro
 
 ## Run Locally
 
